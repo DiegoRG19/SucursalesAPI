@@ -1,0 +1,9 @@
+--Script creación tabla Sucursales
+create table Sucursales_Pru(
+Codigo int primary key not null,
+Descripcion nvarchar(250) not null,
+Direccion nvarchar(250) not null,
+Identificacion nvarchar(50) not null,
+FechaCreacion datetime not null check (FechaCreacion >= getdate()),
+Moneda int not null 
+)

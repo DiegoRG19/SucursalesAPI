@@ -1,0 +1,11 @@
+--Script creación tabla Moneda
+Create table Moneda_Pru(
+IdMoneda int primary key not null,
+AbrevMoneda nvarchar(3) not null,
+NomMoneda nvarchar(20) not null
+)
+
+INSERT INTO Moneda_Pru (IdMoneda, AbrevMoneda, NomMoneda) VALUES (1, 'USD', 'Dólar Estadounidense');
+INSERT INTO Moneda_Pru (IdMoneda, AbrevMoneda, NomMoneda) VALUES (2, 'EUR', 'Euro');
+INSERT INTO Moneda_Pru (IdMoneda, AbrevMoneda, NomMoneda) VALUES (3, 'COP', 'Peso Colombiano');
+INSERT INTO Moneda_Pru (IdMoneda, AbrevMoneda, NomMoneda) VALUES (4, 'YEN', 'Yen');
